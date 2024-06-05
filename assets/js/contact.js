@@ -10,6 +10,10 @@ let general = document.querySelector("#general");
 let subject = document.querySelector("#subject");
 let QueryType = document.querySelector("#QueryType");
 let Message = document.querySelector("#Message");
+let generaltext = document.querySelector("#generaltext");
+let Supportext = document.querySelector("#Supportext");
+
+
 
 function handlinkclick(e) {
   e.preventDefault();
@@ -19,6 +23,16 @@ function handlinkclick(e) {
   yaz.innerText = soy.value;
   mailto.innerText = mail.value;
   Message.innerText = subject.value;
+
+  if (general.checked === true) {
+    QueryType.innerText = generaltext.innerText;
+  } else if (Support.checked === true) {
+    QueryType.innerText = Supportext.innerText;
+  } else {
+    QueryType.innerText = "";
+  }
+
+
 }
 
 
