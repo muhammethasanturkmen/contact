@@ -9,11 +9,12 @@ let Support = document.querySelector("#Support");
 let general = document.querySelector("#general");
 let subject = document.querySelector("#subject");
 let QueryType = document.querySelector("#QueryType");
-let Message = document.querySelector("#Message")
+let Message = document.querySelector("#Message");
 
 function handlinkclick(e) {
   e.preventDefault();
   document.getElementById("todolist").style.display = "flex";
+  document.getElementById("alert").style.display = "flex";
   yazisim.innerText = isim.value;
   yaz.innerText = soy.value;
   mailto.innerText = mail.value;
