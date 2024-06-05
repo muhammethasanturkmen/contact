@@ -7,14 +7,17 @@ let mailto = document.querySelector("#mailto")
 let submit = document.querySelector(".button-one");
 let Support = document.querySelector("#Support");
 let general = document.querySelector("#general");
+let subject = document.querySelector("#subject");
 let QueryType = document.querySelector("#QueryType");
+let Message = document.querySelector("#Message")
 
 function handlinkclick(e) {
   e.preventDefault();
+  document.getElementById("todolist").style.display = "flex";
   yazisim.innerText = isim.value;
   yaz.innerText = soy.value;
   mailto.innerText = mail.value;
-  Support.innerText = QueryType.innerText;
+  Message.innerText = subject.value;
 }
 
 
